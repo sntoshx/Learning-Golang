@@ -3,9 +3,7 @@ package main
 import (
 	"fmt"
 )
-
 var height int
-
 func main() {
 	fmt.Print("Enter the height of the triangle: ")
 	fmt.Scan(&height)
