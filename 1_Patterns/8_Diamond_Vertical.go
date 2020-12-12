@@ -4,13 +4,13 @@ import (
 	"fmt"
 )
 
-var height int
+var width int
 
 func main() {
 	fmt.Print("Enter the width of the diamond: ")
-	fmt.Scan(&height)
-	for i := 0; i < height-1; i++ {
-		for j := 0; j < height - i-1; j++ {
+	fmt.Scan(&width)
+	for i := 0; i < width-1; i++ {
+		for j := 0; j < width - i-1; j++ {
 			fmt.Print(" ")
 		}
 		for j:=0; j<i+1; j++{
@@ -18,11 +18,11 @@ func main() {
 		}
 		fmt.Println("")
 	}
-	for i := 0; i < height; i++ {
+	for i := 0; i < width; i++ {
 		for j := 0; j < i; j++ {
 			fmt.Print(" ")
 		}
-		for j:=0; j<height-i; j++{
+		for j:=0; j<width-i; j++{
 			fmt.Print(" *")
 		}
 		fmt.Println("")
